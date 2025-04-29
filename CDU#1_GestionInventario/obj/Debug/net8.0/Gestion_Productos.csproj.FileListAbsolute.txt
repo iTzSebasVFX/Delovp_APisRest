@@ -1,0 +1,14 @@
+C:\Users\juans\Desktop\Gestion_Productos\Gestion_Productos\bin\Debug\net8.0\Gestion_Productos.exe
+C:\Users\juans\Desktop\Gestion_Productos\Gestion_Productos\bin\Debug\net8.0\Gestion_Productos.deps.json
+C:\Users\juans\Desktop\Gestion_Productos\Gestion_Productos\bin\Debug\net8.0\Gestion_Productos.runtimeconfig.json
+C:\Users\juans\Desktop\Gestion_Productos\Gestion_Productos\bin\Debug\net8.0\Gestion_Productos.dll
+C:\Users\juans\Desktop\Gestion_Productos\Gestion_Productos\bin\Debug\net8.0\Gestion_Productos.pdb
+C:\Users\juans\Desktop\Gestion_Productos\Gestion_Productos\obj\Debug\net8.0\Gestion_Productos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\juans\Desktop\Gestion_Productos\Gestion_Productos\obj\Debug\net8.0\Gestion_Productos.AssemblyInfoInputs.cache
+C:\Users\juans\Desktop\Gestion_Productos\Gestion_Productos\obj\Debug\net8.0\Gestion_Productos.AssemblyInfo.cs
+C:\Users\juans\Desktop\Gestion_Productos\Gestion_Productos\obj\Debug\net8.0\Gestion_Productos.csproj.CoreCompileInputs.cache
+C:\Users\juans\Desktop\Gestion_Productos\Gestion_Productos\obj\Debug\net8.0\Gestion_Productos.dll
+C:\Users\juans\Desktop\Gestion_Productos\Gestion_Productos\obj\Debug\net8.0\refint\Gestion_Productos.dll
+C:\Users\juans\Desktop\Gestion_Productos\Gestion_Productos\obj\Debug\net8.0\Gestion_Productos.pdb
+C:\Users\juans\Desktop\Gestion_Productos\Gestion_Productos\obj\Debug\net8.0\Gestion_Productos.genruntimeconfig.cache
+C:\Users\juans\Desktop\Gestion_Productos\Gestion_Productos\obj\Debug\net8.0\ref\Gestion_Productos.dll
