@@ -1,0 +1,16 @@
+Python Clase #2, creación de API's
+comprobar si hay Python instalado:
+python --versión
+
+mkdir Nombre_carpeta_nueva
+
+cd Nombre...
+//Creamos un ambiente en python
+python -m venv venv
+
+dir // para verificar si se creo correctamente
+
+code . // para abrir el proyecto el VScode
+
+//En vs code debemos activar el entorno de desarrollo en python con el siguiente comando
+.\venv\Scripts\activate
