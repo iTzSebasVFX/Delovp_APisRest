@@ -1,0 +1,11 @@
+El sistema debe permitir una gestion correcta de citas que contenga
+Nombre Paciente
+Apellido Paciente
+Tipo documento
+Numero documento
+Nombre doctor
+Tipo de cita (General, Odontologica, Pediatria, Especialidad)
+
+1. Debe permitir crear y almacenar una nueva cita
+2. Debe permitir ver los tipos de documento más comunes y los tipos de cita más comunes
+3. Debe permitir ver usando defaultDict los pacientes según su tipo
