@@ -1,4 +1,4 @@
-from entities.usuarios import Users
+from usuarios import Users
 
 
 username = "Juan Sebastian";
