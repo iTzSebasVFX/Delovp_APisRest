@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista personas</title>
+</head>
+<body>
+<h1>Persoans registradas</h1>
+{% for id, nombre in personas%}
+<li>{{id}} - {{nombre}}</li>
+{%endfor%}
+
+<a href="agregar">agregar nueva persona</a>
+
+    
+</body>
+</html>
