@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostrar Info</title>
+</head>
+
+<body>
+    <h1>Listado de Citas</h1>
+
+    <ul>
+        {% for cita in citas %}
+        <li>
+            {{ cita[0] }} {{ cita[1] }} - {{ cita[5] }} con {{ cita[4] }}
+        </li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('crearCitas') }}">Nuevo Registro</a>
+    <a href="{{ url_for('mostrarComunes') }}">Mostrar Documentos y Citas Comunes</a>
+</body>
+
+</html>
