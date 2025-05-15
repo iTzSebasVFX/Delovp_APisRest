@@ -1,3 +1,4 @@
+from collections import defaultdict
 from flask import Flask, render_template, request# es una función en Flask que se utiliza para renderizar plantillas HTML utilizando el motor de plantillas Jinja2. Permite generar contenido HTML dinámico al combinar contenido estático con datos proporcionados por la aplicación Flask. 
 from modulos import casosUsoCita
 
@@ -9,7 +10,8 @@ def inicio():
 
 @app.route("/crearCitas")
 def crearCitas():
-    return render_template("crearCitas.html");
+    tipoCita = ("general", "odontologica", "pediatra", "especialidad")
+    return render_template("crearCitas.html", tipoCita=tipoCita);
 
 @app.route("/registrarCita", methods=["GET","POST"])
 def registrar():
@@ -33,7 +35,9 @@ def mostrarCita():
 def mostrarComunes():
     contador = casosUsoCita.docCommons();
     contador2 = casosUsoCita.citaCommons();
-    return render_template("mostrarComunes.html", contador=contador, contador2=contador2);
+    lista_contador = list(contador.items())
+    lista_contador = list(contador2.items())
+    return render_template("mostrarComunes.html", contador=lista_contador, contador2=lista_contador);
 
 @app.route("/pacPorCita")
 def pacPorCita():

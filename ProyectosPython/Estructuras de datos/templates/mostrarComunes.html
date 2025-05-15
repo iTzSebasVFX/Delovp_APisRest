@@ -10,16 +10,16 @@
 <body>
     <h1>Tipo de Documentos y Citas comunes</h1>
     <ul>
-        {% for clave, item in contador.items() %}
+        {% for clave, valor in contador %}
         <li>
-            Nombre: {{ clave }} Cantidad: {{ item }}
+            Nombre: {{ clave }} Cantidad: {{ valor }}
         </li>
         {% endfor %}
     </ul>
     <ul>
-        {% for clave2, item2 in contador2.items() %}
+        {% for clave, valor in contador2 %}
         <li>
-            Nombre: {{ clave2 }} Cantidad: {{ item2 }}
+            Nombre: {{ clave }} Cantidad: {{ valor }}
         </li>
         {% endfor %}
     </ul>
