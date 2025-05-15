@@ -12,10 +12,10 @@
         <form action="registrarCita" method="post">
             <label for="nombre">Nombre Paciente</label>
             <input type="text" name="nombre">
-            
+
             <label for="">Apellidos Paciente</label>
             <input type="text" name="apellido">
-            
+            <br>
             <label for="">Tipo Documento</label>
             <select type="text" name="tipoDoc">
                 <option value="T.I">Tarjeta Identidad</option>
@@ -24,7 +24,7 @@
 
             <label for="">Numero Documento Paciente</label>
             <input type="number" name="numDoc">
-
+            <br>
             <label for="doctorId">Nombre Doctor</label>
             <select name="doctor" id="doctorId">
                 <option value="jhonwick">Dr. Jhon Wick</option>
@@ -32,24 +32,23 @@
                 <option value="jhonson">Dr. Jhonson Wayne</option>
                 <option value="stepheson">Dr. Stepheson Conquer</option>
             </select>
-
-            <label for="">Tipo Cita</label>
-            <select type="text" name="opcion">
-                <option value="general">General</option>
-                <option value="odontologica">Odontologica</option>
-                <option value="pediatra">Pediatra</option>
-                <option value="especialidad">Especialidad</option>
-            </select>
-
+            <br>
+            {% for item in tipoCita %}
+            <br>
+            <input type="radio" id="{{ item }}" name="opcion" value="{{ item }}">
+            <label for="{{ item }}">{{ item.upper() }}</label>
+            <br>
+            {% endfor %}
+            <br>
             <button type="submit">Enviar</button>
         </form>
 
         <div>
-        {%if nombre != null%}
-        <h1>Bienvenido {{nombre}}</h1>
-        {%elif nombre == null%}
-        <h1>Cree su cita</h1>
-        {%endif%}
+            {%if nombre != null%}
+            <h1>Bienvenido {{nombre}}</h1>
+            {%elif nombre == null%}
+            <h1>Cree su cita</h1>
+            {%endif%}
         </div>
     </div>
     <a href="{{ url_for('mostrarCita') }}">Ver listado de citas</a>
