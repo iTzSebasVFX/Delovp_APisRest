@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro De Citas</title>
+</head>
+
+<body>
+    <div>
+        <form action="registrarCita" method="post">
+            <label for="nombre">Nombre Paciente</label>
+            <input type="text" name="nombre">
+            
+            <label for="">Apellidos Paciente</label>
+            <input type="text" name="apellido">
+            
+            <label for="">Tipo Documento</label>
+            <select type="text" name="tipoDoc">
+                <option value="T.I">Tarjeta Identidad</option>
+                <option value="C.C">Cedula Ciudadanía</option>
+            </select>
+
+            <label for="">Numero Documento Paciente</label>
+            <input type="number" name="numDoc">
+
+            <label for="doctorId">Nombre Doctor</label>
+            <select name="doctor" id="doctorId">
+                <option value="jhonwick">Dr. Jhon Wick</option>
+                <option value="cailiusmailus">Dr. Cailius Mailus</option>
+                <option value="jhonson">Dr. Jhonson Wayne</option>
+                <option value="stepheson">Dr. Stepheson Conquer</option>
+            </select>
+
+            <label for="">Tipo Cita</label>
+            <select type="text" name="opcion">
+                <option value="general">General</option>
+                <option value="odontologica">Odontologica</option>
+                <option value="pediatra">Pediatra</option>
+                <option value="especialidad">Especialidad</option>
+            </select>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <div>
+        {%if nombre != null%}
+        <h1>Bienvenido {{nombre}}</h1>
+        {%elif nombre == null%}
+        <h1>Cree su cita</h1>
+        {%endif%}
+        </div>
+    </div>
+    <a href="{{ url_for('mostrarCita') }}">Ver listado de citas</a>
+</body>
+
+</html>

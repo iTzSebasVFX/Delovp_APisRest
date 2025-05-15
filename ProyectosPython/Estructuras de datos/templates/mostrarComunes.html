@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunes</title>
+</head>
+
+<body>
+    <h1>Tipo de Documentos y Citas comunes</h1>
+    <ul>
+        {% for clave, item in contador.items() %}
+        <li>
+            Nombre: {{ clave }} Cantidad: {{ item }}
+        </li>
+        {% endfor %}
+    </ul>
+    <ul>
+        {% for clave2, item2 in contador2.items() %}
+        <li>
+            Nombre: {{ clave2 }} Cantidad: {{ item2 }}
+        </li>
+        {% endfor %}
+    </ul>
+    <br>
+    <a href="{{ url_for('pacPorCita') }}">Pacientes Por tipo Cita</a>
+</body>
+
+</html>
