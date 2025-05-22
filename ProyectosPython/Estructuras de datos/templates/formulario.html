@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <h1>Formulario Registro Citas</h1>
+    <form action="registrarCita" method="post">
+        <label for="nombre">Nombre Paciente</label>
+        <input type="text" name="nombre">
+        <br>
+        <label for="">Apellidos Paciente</label>
+        <input type="text" name="apellido">
+        <br>
+        <label for="">Tipo Documento</label>
+        <select type="text" name="tipoDoc">
+            <option value="T.I">Tarjeta Identidad</option>
+            <option value="C.C">Cedula Ciudadanía</option>
+        </select>
+        <br>
+        <label for="">Numero Documento Paciente</label>
+        <input type="number" name="numDoc">
+        <br>
+        <label for="doctorId">Nombre Doctor</label>
+        <select name="nomDoc" id="doctorId">
+            <option value="jhonwick">Dr. Jhon Wick</option>
+            <option value="cailiusmailus">Dr. Cailius Mailus</option>
+            <option value="jhonson">Dr. Jhonson Wayne</option>
+            <option value="stepheson">Dr. Stepheson Conquer</option>
+        </select>
+        <br>
+        <label for="opcionid">Opcion</label>
+        <select name="opcion" id="opcionid">
+            <option value="general">General</option>
+            <option value="odontologica">Odontologica</option>
+            <option value="pediatra">Pediatra</option>
+            <option value="especialidad">Especialidad</option>
+        </select>
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+    <a href="/mostrarCitas/">Mostrar Lista Citas</a>
+</body>
+
+</html>
